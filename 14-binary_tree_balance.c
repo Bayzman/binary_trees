@@ -14,6 +14,12 @@ int binary_tree_h(const binary_tree_t *tree)
 	l = 0;
 	r = 0;
 
+	if (tree == NULL)
+		return (0);
+
+	if (tree->left == NULL && tree->right == NULL)
+		return (0);
+
 	if (tree)
 	{
 		if (tree->left)
