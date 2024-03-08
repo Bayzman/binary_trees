@@ -40,9 +40,9 @@ int binary_tree_h(const binary_tree_t *tree)
 
 int binary_tree_balance(const binary_tree_t *tree)
 {
-	int hl = 0;
-	int hr = 0;
-	int bf = 0;
+	int hl;
+	int hr;
+	int bf;
 
 	if (tree == NULL)
 		return (0);
@@ -50,7 +50,7 @@ int binary_tree_balance(const binary_tree_t *tree)
 	hl = binary_tree_h(tree->left);
 	hr = binary_tree_h(tree->right);
 
-	bf = hl - hr;
+	bf = (hl - hr);
 
 	return (bf);
 }
