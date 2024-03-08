@@ -26,6 +26,9 @@ size_t binary_tree_h(const binary_tree_t *tree)
 		}
 	}
 
+	else
+		return (-1);
+
 	if (l > r)
 		return (l);
 	else
