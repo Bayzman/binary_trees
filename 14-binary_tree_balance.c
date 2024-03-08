@@ -17,8 +17,8 @@ size_t binary_tree_balance(const binary_tree_t *tree)
 		return (0);
 	}
 
-	hl += 1 + binary_tree_balance(tree->left);
-	hr += 1 + binary_tree_balance(tree->right);
+	hl += 1 + binary_tree_height(tree->left);
+	hr += 1 + binary_tree_height(tree->right);
 
 	bf = hl - hr;
 
