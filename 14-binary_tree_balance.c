@@ -6,7 +6,7 @@
  * Return: int
  */
 
-int binary_tree_h(const binary_tree_t *tree)
+size_t binary_tree_h(const binary_tree_t *tree)
 {
 	int l;
 	int r;
