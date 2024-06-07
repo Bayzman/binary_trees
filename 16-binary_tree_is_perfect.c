@@ -4,7 +4,7 @@
  * helper_function - checks if a binary tree is perfect
  * @tree: pointer to the tree
  * @is_perfect: pointer to a boolean variable
- * Return: height of the tree
+ * Return: 1 for perfect tree, else 0
  */
 
 size_t helper_function(const binary_tree_t *tree, bool *is_perfect)
